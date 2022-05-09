@@ -1,3 +1,15 @@
+var agora = new Date()
+var hora = agora.getHours()
+    console.log(`Agora são exatamente ${hora} horas`)
+    if(hora < 12) {
+        alert(`Bom Dia!`)
+    }else if(hora <= 18){
+        alert(`Boa Tarde!`)
+    }else {
+        alert(`Boa Noite!`)
+    }
+
+
 
 let sliderElement = document.querySelector("#slider");
 let buttonElement = document.querySelector("#button");
@@ -33,4 +45,4 @@ function copyPassword(){
     alert("Senha copiada com sucesso!")
     navigator.clipboard.writeText(novaSenha);
 }
-
+    
